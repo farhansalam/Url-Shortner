@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @url.url %>
+</p>
+
+<p>
+  <strong>Short url:</strong>
+  <a href=<%= request.protocol + request.host_with_port + "/" + @url.short_url %>  > <%= request.protocol + request.host_with_port + "/" + @url.short_url %></a>
+</p>
+
